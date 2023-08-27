@@ -1,0 +1,133 @@
+body{
+    background-color: rgb(12, 82, 214);
+    color: aliceblue;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background-color:rgb(31, 26, 62);
+    width: 37vw;
+    height: 85%;
+    padding: 50px;
+    box-sizing: border-box;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.bill-total{
+    margin-top: 60px;
+    font-size: 1.5rem;
+}
+
+.input-area{
+    display: flex;
+    height: 5vh;
+    background-color: cornflowerblue;
+    border-radius: 30px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.input-area > h4{
+    margin: auto 5px;
+}
+
+.input-area > input::placeholder
+{
+    color: rgb(159, 159, 159);
+}
+
+.input-area > input{
+    background-color: cornflowerblue;
+    color: aliceblue;
+    border: none;
+    width: 100%;
+    border-bottom-right-radius: 20px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.people-container{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+.counters{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    overflow: auto;
+}
+
+.counters > div{
+    display: flex;
+    align-items: center;
+}
+
+.counters > div > h4{
+    display: inline;
+    margin: auto 15px;
+}
+
+button{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: none;
+    background-color: cornflowerblue;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.total{
+    font-size: 2.2rem;
+    margin-top: 25px;
+}
+
+
+/* Responsiveness */
+@media screen{
+    .container{
+        width: 90vw;
+    }
+}
+
+@media screen and (min-width: 480px){
+    .container{
+        width: 85vw;
+    }
+
+    .bill-total{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        width: 55vw;
+    }
+
+    .bill-total{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width: 1050px){
+    .container{
+        width: 45vw;
+    }
+
+    .bill-total{
+        font-size: 1.5rem;
+    }
+}
+
